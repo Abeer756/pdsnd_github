@@ -50,3 +50,6 @@ This project utilizes the following datasets:
   - [Udacity GitHub Repository](https://github.com/udacity)
   - [pandas Documentation](https://pandas.pydata.org/)
   - [numpy Documentation](https://numpy.org/)
+
+## Contributing
+- Contributions are welcome! Please fork the repository and submit a pull request.
