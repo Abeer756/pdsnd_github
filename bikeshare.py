@@ -108,11 +108,15 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
+    # Map month numbers to month names
+    month_names = ['January', 'February', 'March', 'April', 'May', 'June']
+
+
     # 1) Most common month
-    #    df['month'] is an integer (1–12), but if you want the name,
-    #    you could map it back to ['January', 'February', ...] if needed.
-    common_month = df['month'].mode()[0]
-    print(f"The most common month (as a number 1–12) is: {common_month}")
+    common_month_num = df['month'].mode()[0]
+    common_month_name = month_names[common_month_num - 1]  # Subtract 1 for zero-based index
+    print(f"The most common month is: {common_month_name}")
+
 
     # 2) Most common day of week
     common_day_of_week = df['day_of_week'].mode()[0]
