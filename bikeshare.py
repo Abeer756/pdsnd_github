@@ -62,6 +62,10 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+     # Add a progress message
+    print(f"\nLoading data for {city.title()}...")
+
+
     # Map city strings to CSV filenames
     CITY_DATA = {
         'chicago': 'chicago.csv',
